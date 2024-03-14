@@ -4,14 +4,13 @@ import javafx.animation.TranslateTransition;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 
 public class AppInitializer extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
-        Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/veiw/firstLoginPage.fxml")));
+        Scene scene = new Scene(FXMLLoader.load(getClass().getResource("/view/home-form.fxml")));
         primaryStage.setScene(scene);
         primaryStage.setTitle("Library management system");
         //primaryStage.getIcons().add(new Image("/assets/icons8-house-512.png"));

@@ -11,7 +11,7 @@
 <?import javafx.scene.text.Text?>
 
 
-<AnchorPane prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 10px; -fx-border-radius: 10px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.pesala_X.bookWorm.controller.FirstLoginPage">
+<AnchorPane prefHeight="400.0" prefWidth="400.0" style="-fx-background-color: white; -fx-border-color: black; -fx-background-radius: 10px; -fx-border-radius: 10px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.pesala_X.bookWorm.Controller.FirstLoginPage">
    <children>
       <ImageView fitHeight="297.0" fitWidth="297.0" layoutX="51.0" layoutY="14.0">
          <image>

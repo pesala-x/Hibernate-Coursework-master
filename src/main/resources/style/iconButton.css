@@ -1,0 +1,176 @@
+.font {
+    -fx-font-family: "System Bold";
+}
+
+.bold-font {
+    -fx-font-family: "System Bold";
+}
+
+.image-view {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.3), 10, 0, 0, 0);
+    /* Add any other default styles as needed */
+}
+
+/* Styles for the image on hover */
+.image-view:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 51, 255, 0.8), 10, 0, 0, 0);
+    /* Change the color to green (0, 255, 0), adjust as needed */
+}
+
+.btn {
+    -fx-background-color: transparent;
+    -fx-font-weight: bold;
+    -fx-border-color: transparent;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-font-size: 15;
+    -fx-alignment: center;
+    -fx-text-fill: black; /* Add this line to set text color to black */
+}
+
+.btn:hover {
+    -fx-background-color: #0000ff;
+    -fx-border-color: transparent;
+    -fx-text-fill: #000000;
+}
+.btndelete {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-font-size: 15;
+    -fx-alignment: center;
+    -fx-text-fill: black; /* Add this line to set text color to black */
+}
+.btndelete:hover {
+    -fx-background-color: #ff0000;
+    -fx-border-color: transparent;
+    -fx-text-fill: #000000;
+}
+/* Apply these styles when the input is in focus */
+.text-field:focused {
+    -fx-border-color: #00ff00; /* Change border color when focused */
+}
+.text-field {
+    -fx-border-radius: 20;
+    -fx-border-color: #0095ff; /* Border color */
+    -fx-border-width: 2; /* Border width */
+    -fx-padding: 5; /* Padding to make the text not touch the border */
+}
+.btnClose {
+    -fx-background-color: rgb(150, 85, 85);
+    -fx-border-color: transparent;
+    -fx-background-radius: 5; /* Adjust background radius for a round button */
+    -fx-padding: 5 10; /* Adjust padding for content inside the button */
+    -fx-font-size: 10; /* Adjust font size for a smaller button */
+    -fx-alignment: center;
+    -fx-text-fill: black;
+}
+
+.btnClose:hover {
+    -fx-background-color: #ff0000;
+    -fx-border-color: transparent;
+    -fx-text-fill: #000000;
+}
+.btnSave {
+    -fx-background-color: rgb(245, 245, 245);
+    -fx-border-color: transparent;
+    -fx-background-radius: 5; /* Adjust background radius for a round button */
+    -fx-padding: 5 10; /* Adjust padding for content inside the button */
+    -fx-font-size: 20; /* Adjust font size for a smaller button */
+    -fx-alignment: center;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+.btnSave:hover {
+    -fx-background-color: #00ff12;
+    -fx-border-color: transparent;
+    -fx-text-fill: #000000;
+}
+
+.btnUserManage{
+    -fx-background-color: rgb(245, 245, 245);
+    -fx-border-color: transparent;
+    -fx-background-radius: 10; /* Adjust background radius for a round button */
+    -fx-padding: 5 10; /* Adjust padding for content inside the button */
+    -fx-font-size: 20; /* Adjust font size for a smaller button */
+    -fx-alignment: center;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-pref-width: 300; /* Preferred width */
+    -fx-pref-height: 150
+}
+.btnUserManage:hover {
+    -fx-background-color: #00ff12;
+    -fx-border-color: transparent;
+    -fx-text-fill: #000000;
+    -fx-background-radius: 10;
+}
+.btnCreateAccount{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-background-radius: 10; /* Adjust background radius for a round button */
+    -fx-padding: 5 10; /* Adjust padding for content inside the button */
+    -fx-font-size: 15; /* Adjust font size for a smaller button */
+    -fx-alignment: center;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-pref-width: 250; /* Preferred width */
+    -fx-pref-height: 40
+}
+.btnCreateAccount:hover {
+    -fx-background-color: #00ff12;
+    -fx-border-color: transparent;
+    -fx-text-fill: #000000;
+    -fx-background-radius: 10;
+}
+
+.text-field2:focused {
+    -fx-border-color: #0095ff; /* Change border color when focused */
+}
+.text-field2 {
+    -fx-border-radius: 5;
+    -fx-border-color: #ff9900; /* Border color */
+    -fx-border-width: 2; /* Border width */
+    -fx-padding: 5; /* Padding to make the text not touch the border */
+}
+
+.btnAdd {
+    -fx-background-color: rgb(245, 245, 245);
+    -fx-border-color: transparent;
+    -fx-background-radius: 30; /* Adjust background radius for a round button */
+    -fx-padding: 5 10; /* Adjust padding for content inside the button */
+    -fx-font-size: 20; /* Adjust font size for a smaller button */
+    -fx-alignment: center;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+}
+
+.btnAdd:hover {
+    -fx-background-color: #00e9ff;
+    -fx-border-color: transparent;
+    -fx-text-fill: #000000;
+}
+.combo-box {
+    -fx-background-color: grey;
+    -fx-background-radius: 20; /* Adjust the value for more or less rounded corners */
+}
+
+.combo-box .list-cell {
+    -fx-background-color: transparent; /* This ensures the dropdown items don't inherit the grey background */
+    -fx-text-fill: black; /* Adjusts the text color inside the dropdown */
+    -fx-font-weight: bold; /* Makes the font bold */
+}
+
+.combo-box .cell {
+    -fx-background-color: grey;
+    -fx-background-radius: 10;
+
+}
+
+.combo-box .text-field {
+    -fx-background-color: grey;
+    -fx-background-radius: 10; /* Ensures the text field part also has rounded corners */
+    -fx-font-weight: bold; /* Bold text in the input field */
+}

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-radius: 10px; -fx-border-color: blue; -fx-border-radius: 10px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.pesala_X.bookWorm.controller.Login_Form">
+   <children>
+      <ImageView fitHeight="703.0" fitWidth="703.0" layoutX="-115.0" layoutY="-3.0" opacity="0.8" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="-115.0" AnchorPane.rightAnchor="612.0" AnchorPane.topAnchor="-3.0">
+         <image>
+            <Image url="@../assets/Side-Login.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="364.0" fitWidth="364.0" layoutX="54.0" layoutY="325.0">
+         <image>
+            <Image url="@../assets/Book Worm Logo.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="-79.0" layoutY="250.0" rotate="-90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome">
+         <font>
+            <Font name="Bauhaus 93" size="64.0" />
+         </font>
+      </Text>
+      <Label layoutX="37.0" layoutY="556.0" text="Library Management System" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="547.0" fitWidth="443.0" layoutX="682.0" layoutY="86.0" opacity="0.61">
+         <image>
+            <Image url="@../assets/logbox.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="811.0" layoutY="97.0" prefHeight="54.0" prefWidth="182.0" text="LOGIN">
+         <font>
+            <Font name="Bauhaus 93" size="37.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5254902243614197" green="0.7372549176216125" blue="0.6823529601097107" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.2666666805744171" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <CheckBox fx:id="checkBox" layoutX="1033.0" layoutY="360.0" mnemonicParsing="false" text="show">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <TextField fx:id="txtUserID" layoutX="741.0" layoutY="229.0" prefHeight="41.0" prefWidth="314.0" promptText="User ID" style="-fx-background-color: transparent; -fx-border-radius: 10px; -fx-background-insets: black;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textField" layoutX="744.0" layoutY="307.0" prefHeight="41.0" prefWidth="314.0" style="-fx-background-color: transparent; -fx-border-radius: 10px;" />
+      <PasswordField fx:id="textPassword" layoutX="744.0" layoutY="307.0" onAction="#txtPasswordOnAction" prefHeight="41.0" prefWidth="314.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-radius: 10px;">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="Loginbtn" layoutX="857.0" layoutY="404.0" mnemonicParsing="false" onAction="#LoginbtnOnAction" style="-fx-background-color: transparent;" text="Login" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="23.0">
+               <image>
+                  <Image url="@../assets/loginbtn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Bauhaus 93" size="18.0" />
+         </font>
+      </Button>
+      <Label layoutX="752.0" layoutY="485.0" text="are you haven't accunt ?" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="hypCreate" layoutX="947.0" layoutY="482.0" onAction="#hypOnAction" text="Create Accunt" textFill="#ff718e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+      <Label layoutX="786.0" layoutY="670.0" text="Copyright © 2024 Pesala-X. All Rights Reserved." textFill="#14d7d0" />
+      <ImageView fitHeight="100.0" fitWidth="97.0" layoutX="864.0" layoutY="520.0">
+         <image>
+            <Image url="@../assets/Book Worm Logo.png" />
+         </image>
+      </ImageView>
+      <Line endX="151.7332763671875" endY="1.600006103515625" layoutX="909.0" layoutY="269.0" startX="-168.0" startY="1.600006103515625">
+         <stroke>
+            <LinearGradient endX="0.13257575306025418" endY="1.0" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10000000149011612" green="0.4902283251285553" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="0.059187665581703186" blue="0.8799999952316284" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="151.7332763671875" endY="1.600006103515625" layoutX="910.0" layoutY="348.0" startX="-168.0" startY="1.600006103515625">
+         <stroke>
+            <LinearGradient endX="0.13257575306025418" endY="1.0" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10000000149011612" green="0.4902283251285553" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="0.059187665581703186" blue="0.8799999952316284" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="11.4000244140625" layoutX="835.0" layoutY="124.0" startX="-100.0">
+         <stroke>
+            <LinearGradient endX="0.13257575306025418" endY="1.0" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10000000149011612" green="0.4902283251285553" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="11.4000244140625" layoutX="1061.0" layoutY="123.0" startX="-100.0">
+         <stroke>
+            <LinearGradient endX="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10000000149011612" green="0.4902283251285553" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+   </children>
+</AnchorPane>
