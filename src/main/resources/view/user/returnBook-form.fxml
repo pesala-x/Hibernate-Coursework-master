@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="638.0" prefWidth="926.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.pesala_X.bookWorm.Controller.User.ReturnBookFormController">
+   <children>
+      <TableView fx:id="tblBooks" layoutX="6.0" layoutY="10.0" prefHeight="618.0" prefWidth="914.0" styleClass="table">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="138.39995956420898" text="Transaction ID" />
+            <TableColumn fx:id="colBranch" prefWidth="118.40000915527344" text="Branch" />
+            <TableColumn fx:id="colTitle" prefWidth="140.79998779296875" text="Title" />
+            <TableColumn fx:id="colUser" prefWidth="150.4000244140625" text="User Name" />
+            <TableColumn fx:id="colBorrow" prefWidth="175.199951171875" text="Borrow Date" />
+            <TableColumn fx:id="colReturn" prefWidth="216.7999267578125" text="Return Date" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

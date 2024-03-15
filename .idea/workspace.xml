@@ -4,63 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f7e76c16-03ed-4da8-afff-cc433bda20c7" name="Changes" comment="navigation done">
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/Controller/User/UserLoginFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/Controller/User/UserSignupFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/Controller/admin/AdminDashboardForm.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/Controller/admin/AdminLoginFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/Controller/admin/BookManageFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/bo/BOFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/bo/SuperBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/bo/custom/AdminBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/bo/custom/BookBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/bo/custom/BranchBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/bo/custom/TransactionBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/bo/custom/UserBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/bo/custom/impl/AdminBOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/bo/custom/impl/BookBOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/bo/custom/impl/BranchBOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/bo/custom/impl/TransactionBOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/bo/custom/impl/UserBOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/configuration/SessionFactoryConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/dao/CrudDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/dao/DAOFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/dao/SuperDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/dao/custom/AdminDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/dao/custom/BookDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/dao/custom/BranchDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/dao/custom/TransactionDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/dao/custom/UserDAO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/dao/custom/impl/AdminDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/dao/custom/impl/BookDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/dao/custom/impl/BranchDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/dao/custom/impl/TransactionDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/dao/custom/impl/UserDAOImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/dto/AdminDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/dto/BookDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/dto/BranchDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/dto/TransactionDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/dto/UserDTO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/entity/Admin.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/entity/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/entity/Branch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/entity/Transactions.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/adminAddButton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/adminClearButton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/adminDeleteButton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/adminSearchButton.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/adminUpdateButton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/backButton.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/signIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/admin/adminDashboard-form.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/admin/adminLogin-form.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/admin/bookManage-form.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/user/userLogin-form.fxml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/view/user/userSignup-form.fxml" afterDir="false" />
+    <list default="true" id="f7e76c16-03ed-4da8-afff-cc433bda20c7" name="Changes" comment=" Admin Implemented">
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/Controller/User/BookBorrowFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/Controller/User/BookSearchFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/Controller/User/ReturnBookFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/Controller/User/UserDashboardFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/Controller/User/UserSettingsFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/Controller/admin/ViewTransactionsFormController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/transactionReturnButton.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/assets/userDashboardLogout.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/admin/viewTransactions-form.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/user/bookBorrow-form.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/user/bookSearch-form.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/user/returnBook-form.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/user/userDashboard-form.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/view/user/userSettings-form.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/Controller/HomeFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/Controller/HomeFormController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/Controller/MainLoginFormController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lk/pesala_X/bookWorm/Controller/MainLoginFormController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/hibernate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/hibernate.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/view/Login-Form.fxml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,6 +33,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="module-info" />
         <option value="FxmlFile" />
         <option value="Class" />
       </list>
@@ -207,7 +171,7 @@
       <workItem from="1710349915030" duration="2621000" />
       <workItem from="1710411162698" duration="856000" />
       <workItem from="1710417062983" duration="5693000" />
-      <workItem from="1710439494505" duration="11767000" />
+      <workItem from="1710439494505" duration="19470000" />
     </task>
     <task id="LOCAL-00001" summary="login Done">
       <option name="closed" value="true" />
@@ -241,7 +205,23 @@
       <option name="project" value="LOCAL" />
       <updated>1710428110790</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=" Admin Implemented">
+      <option name="closed" value="true" />
+      <created>1710514780895</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1710514780895</updated>
+    </task>
+    <task id="LOCAL-00006" summary=" Admin Implemented">
+      <option name="closed" value="true" />
+      <created>1710514794600</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1710514794600</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -251,7 +231,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="login Done" />
     <MESSAGE value="navigation done" />
-    <option name="LAST_COMMIT_MESSAGE" value="navigation done" />
+    <MESSAGE value=" Admin Implemented" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Admin Implemented" />
   </component>
   <component name="XPathView.XPathProjectComponent">
     <history />

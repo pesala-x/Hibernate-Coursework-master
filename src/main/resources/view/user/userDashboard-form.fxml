@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="720.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.pesala_X.bookWorm.Controller.User.UserDashboardFormController">
+   <children>
+      <ImageView fitHeight="669.0" fitWidth="1154.0" layoutX="23.0" layoutY="26.0" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="23.0" AnchorPane.rightAnchor="23.0" AnchorPane.topAnchor="26.0">
+         <image>
+            <Image url="@../../assets/dashbordRep.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="39.0" layoutY="169.0" mnemonicParsing="false" onAction="#btnSearchBooksOnAction" prefHeight="40.0" prefWidth="165.0" style="-fx-background-color: black; -fx-border-color: white; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Search Books" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="120.0" fitWidth="200.0" layoutX="13.0" layoutY="549.0">
+         <image>
+            <Image url="@../../assets/Book%20Worm%20Logo%20black1.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="39.0" layoutY="236.0" mnemonicParsing="false" onAction="#btnMyBooksOnAction" prefHeight="40.0" prefWidth="165.0" style="-fx-background-color: black; -fx-border-color: white; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="My Books" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="39.0" layoutY="305.0" mnemonicParsing="false" onAction="#btnReturnBooksOnAction" prefHeight="40.0" prefWidth="165.0" style="-fx-background-color: black; -fx-border-color: white; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Return Books" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="39.0" layoutY="377.0" mnemonicParsing="false" onAction="#btnSettingsOnAction" style="-fx-background-color: black; -fx-border-color: white; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Acount Settings" textFill="WHITE">
+         <font>
+            <Font name="Bauhaus 93" size="20.0" />
+         </font>
+      </Button>
+      <ImageView layoutX="10.0" layoutY="10.0" onMouseClicked="#btnBackOnAction">
+         <image>
+            <Image url="@../../assets/backButton.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="52.0" layoutY="669.0" mnemonicParsing="false" onAction="#btnSignOutOnAction" style="-fx-background-color: white; -fx-background-radius: 10px; -fx-border-radius: 10px;" text="Sign out" textFill="#0f9fdc">
+         <font>
+            <Font name="Bauhaus 93" size="20.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="21.0" fitWidth="21.0">
+               <image>
+                  <Image url="@../../assets/userDashboardLogout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label fx:id="lblTitle" layoutX="500.0" layoutY="5.0" prefHeight="34.0" prefWidth="200.0" text="User Dashboard">
+         <font>
+            <Font name="Bauhaus 93" size="28.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="880.0" layoutY="685.0" prefHeight="20.0" prefWidth="145.0" text="Date">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="1052.0" layoutY="685.0" prefHeight="20.0" prefWidth="145.0" text="Time">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="pane" layoutX="237.0" layoutY="41.0" prefHeight="638.0" prefWidth="926.0" style="-fx-background-radius: 10px; -fx-border-color: black; -fx-border-radius: 10px;" />
+   </children>
+</AnchorPane>

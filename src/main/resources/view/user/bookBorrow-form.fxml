@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="638.0" prefWidth="926.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.pesala_X.bookWorm.Controller.User.BookBorrowFormController">
+   <children>
+      <TableView fx:id="tblBooks" layoutX="6.0" layoutY="16.0" prefHeight="606.0" prefWidth="916.0" style="-fx-background-radius: 10px;" styleClass="table">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="131.9999942779541" text="Transaction ID" />
+            <TableColumn fx:id="colBranch" prefWidth="142.4000244140625" text="Branch" />
+            <TableColumn fx:id="colTitle" prefWidth="145.5999755859375" text="Title" />
+            <TableColumn fx:id="colUser" prefWidth="151.20004272460938" text="User Name" />
+            <TableColumn fx:id="colBorrow" prefWidth="172.80010986328125" text="Borrow Date" />
+            <TableColumn fx:id="colReturn" prefWidth="195.9998779296875" text="Return Date" />
+         </columns>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TableView>
+   </children>
+</AnchorPane>

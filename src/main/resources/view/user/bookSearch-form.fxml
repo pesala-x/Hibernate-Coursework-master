@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="638.0" prefWidth="926.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.pesala_X.bookWorm.Controller.User.BookSearchFormController">
+   <children>
+      <TableView fx:id="tblBooks" layoutX="17.0" layoutY="80.0" prefHeight="544.0" prefWidth="891.0" style="-fx-background-radius: 10px;" styleClass="table">
+         <columns>
+            <TableColumn fx:id="colId" prefWidth="83.19997882843018" text="Book Id" />
+            <TableColumn fx:id="colBranch" prefWidth="118.39999389648438" text="Branch" />
+            <TableColumn fx:id="colTitle" prefWidth="133.6000518798828" text="Title" />
+            <TableColumn fx:id="colAuthor" prefWidth="144.79998779296875" text="Author" />
+            <TableColumn fx:id="colGenre" prefWidth="138.39996337890625" text="Genre" />
+            <TableColumn fx:id="colStatus" prefWidth="100.79998779296875" text="Status" />
+            <TableColumn fx:id="colDateTime" prefWidth="216.0" text="Added Data &amp; Time" />
+         </columns>
+         <effect>
+            <DropShadow />
+         </effect>
+      </TableView>
+      <TextField fx:id="txtSearch" layoutX="756.0" layoutY="30.0" onAction="#btnSearchOnAction" promptText="Search Book Name" style="-fx-background-radius: 10px; -fx-border-color: #14d7d0; -fx-border-radius: 10px;" />
+      <ImageView fitHeight="28.0" fitWidth="28.0" layoutX="726.0" layoutY="30.0">
+         <image>
+            <Image url="@../../assets/adminSearchButton.gif" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
