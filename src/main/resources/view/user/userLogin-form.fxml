@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="pane" prefHeight="460.0" prefWidth="500.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 10px; -fx-background-radius: 10px;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.pesala_X.bookWorm.Controller.User.UserLoginFormController">
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="157.0" layoutY="28.0" prefHeight="54.0" prefWidth="182.0" text="LOGIN">
+         <font>
+            <Font name="Bauhaus 93" size="37.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.5254902243614197" green="0.7372549176216125" blue="0.6823529601097107" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="0.2666666805744171" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <CheckBox fx:id="checkBox" layoutX="379.0" layoutY="291.0" mnemonicParsing="false" text="show">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </CheckBox>
+      <TextField fx:id="txtUsername" layoutX="87.0" layoutY="160.0" prefHeight="41.0" prefWidth="314.0" promptText="User ID" style="-fx-background-color: transparent; -fx-border-radius: 10px; -fx-background-insets: black;">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="textField" layoutX="90.0" layoutY="238.0" prefHeight="41.0" prefWidth="314.0" style="-fx-background-color: transparent; -fx-border-radius: 10px;" />
+      <PasswordField fx:id="txtPassword" layoutX="90.0" layoutY="238.0" onAction="#btnLoginOnAction" prefHeight="41.0" prefWidth="314.0" promptText="Password" style="-fx-background-color: transparent; -fx-border-radius: 10px;">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="Loginbtn" layoutX="203.0" layoutY="335.0" mnemonicParsing="false" onAction="#btnLoginOnAction" style="-fx-background-color: transparent;" text="Login">
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="23.0">
+               <image>
+                  <Image url="@../../assets/loginbtn.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="Bauhaus 93" size="18.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.47348484171159344">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color green="0.14666666090488434" blue="0.800000011920929" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Button>
+      <Label layoutX="98.0" layoutY="416.0" text="are you haven't accunt ?">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="hypSignup" layoutX="293.0" layoutY="413.0" onAction="#hypSignupOnAction" text="Create Accunt" textFill="#ff718e">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Hyperlink>
+      <Line endX="151.7332763671875" endY="1.600006103515625" layoutX="258.0" layoutY="200.0" startX="-168.0" startY="1.600006103515625">
+         <stroke>
+            <LinearGradient endX="0.13257575306025418" endY="1.0" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10000000149011612" green="0.4902283251285553" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="0.059187665581703186" blue="0.8799999952316284" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <Line endX="151.7332763671875" endY="1.600006103515625" layoutX="258.0" layoutY="278.0" startX="-168.0" startY="1.600006103515625">
+         <stroke>
+            <LinearGradient endX="0.13257575306025418" endY="1.0" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.10000000149011612" green="0.4902283251285553" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color green="0.059187665581703186" blue="0.8799999952316284" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+      <ImageView fitHeight="36.0" fitWidth="32.0" layoutX="14.0" layoutY="14.0" onMouseClicked="#btnBackOnAction">
+         <image>
+            <Image url="@../../assets/backButton.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
