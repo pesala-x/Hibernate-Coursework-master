@@ -38,14 +38,14 @@ public class AdminLoginFormController {
     private final AdminBO adminBO = (AdminBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.ADMIN);
 
     public void initialize(){
-        //addDefaultAdmin();
+        addDefaultAdmin();
     }
 
     @FXML
     void btnBackOnAction(MouseEvent event) {
         pane.getChildren().clear();
         try {
-            AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/view/mainLoginForm.fxml"));
+            AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/view/mainLogin-form.fxml"));
             pane.getChildren().add(anchorPane);
         } catch (IOException e) {
             e.printStackTrace();

@@ -15,7 +15,7 @@ import java.util.List;
 @Data
 
 @Entity
-@Table(name = "transaction")
+@Table(name = "transactions")
 public class Transactions implements Serializable {
 
     @Id
@@ -36,8 +36,8 @@ public class Transactions implements Serializable {
 
     private String status;
 
-    @ManyToMany(mappedBy = "transactionList")
-    private List<Book> bookList = new ArrayList<>();
+    @OneToMany(mappedBy = "transactions")
+    private List<BookTransaction> bookTransactions = new ArrayList<>();
 
     public Transactions(String userName, String bookTitle, String branch,String status, Date borrowing, Date returning) {
         this.userName = userName;

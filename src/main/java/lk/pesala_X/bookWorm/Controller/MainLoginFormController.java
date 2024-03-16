@@ -16,7 +16,7 @@ public class MainLoginFormController {
     void btnAdminOnAction(ActionEvent event) {
         pane.getChildren().clear();
         try {
-            AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/view/admin/adminLoginForm.fxml"));
+            AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/view/admin/adminLogin-form.fxml"));
             pane.getChildren().add(anchorPane);
         } catch (IOException e) {
             e.printStackTrace();

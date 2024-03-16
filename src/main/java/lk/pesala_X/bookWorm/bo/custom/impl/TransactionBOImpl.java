@@ -43,8 +43,21 @@ public class TransactionBOImpl implements TransactionBO {
     }
 
     @Override
-    public ObservableList<TransactionDTO> getAllTransaction(){
-        return null;
+    public ObservableList<TransactionDTO> getAllTransaction() throws Exception {
+        List<Transactions> transactionList = transactionDAO.loadAll();
+        List<TransactionDTO> transactionDTOS = new ArrayList<>();
+        for (Transactions transaction : transactionList) {
+            transactionDTOS.add(new TransactionDTO(
+                    transaction.getId(),
+                    transaction.getBranch(),
+                    transaction.getBookTitle(),
+                    transaction.getUserName(),
+                    transaction.getBorrowing(),
+                    transaction.getReturning(),
+                    transaction.getStatus()
+            ));
+        }
+        return FXCollections.observableArrayList(transactionDTOS);
     }
 
     @Override

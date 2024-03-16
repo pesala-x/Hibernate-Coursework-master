@@ -1,6 +1,9 @@
 package lk.pesala_X.bookWorm.Controller.admin;
 
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
@@ -9,6 +12,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 import lk.pesala_X.bookWorm.bo.BOFactory;
 import lk.pesala_X.bookWorm.bo.custom.BookBO;
 import lk.pesala_X.bookWorm.dto.BookDTO;
@@ -17,6 +21,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -82,10 +87,30 @@ public class BookManageFormController {
 
     public void initialize(){
         //updateRealTime(lblTime);
+        setDate();
+        initializeTimeUpdater();
         lblTitle.setText("Welcome To "+branchName+" Branch");
         txtBranch.setText(branchName);
         reload();
     }
+
+    private void setDate() {
+        String date = String.valueOf(LocalDate.now());
+        lblDate.setText(date);
+    }
+    private Timeline timeline;
+    private void initializeTimeUpdater() {
+        timeline = new Timeline(new KeyFrame(Duration.seconds(1), this::updateTime));
+        timeline.setCycleCount(Timeline.INDEFINITE);
+        timeline.play();
+    }
+
+    private void updateTime(ActionEvent event) {
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("hh:mm a");
+        String timeWithAmPm = LocalTime.now().format(formatter);
+        lblTime.setText(timeWithAmPm);
+    }
+
     private void setCellValueFactory() {
         colBookId.setCellValueFactory(new PropertyValueFactory<>("id"));
         colBranch.setCellValueFactory(new PropertyValueFactory<>("branch"));
@@ -216,8 +241,9 @@ public class BookManageFormController {
     }
 
     private boolean validateBook(){
-        String title = txtTitle.getText();
-        boolean isTitleValidated = Pattern.compile("^[A-Za-z]{1,20}$").matcher(title).matches();
+        String title = txtTitle.getText();//^[A-Za-z]{1,20}$
+
+        boolean isTitleValidated = Pattern.compile("^[A-Za-z0-9\\s',.:-]+$").matcher(title).matches();
 
         if (!isTitleValidated) {
             new Alert(Alert.AlertType.WARNING, "Please enter a valid book title").show();
@@ -227,7 +253,7 @@ public class BookManageFormController {
         }
 
         String author = txtAuthor.getText();
-        boolean isAuthorValidated = Pattern.compile("^[A-Za-z]{1,20}$").matcher(author).matches();
+        boolean isAuthorValidated = Pattern.compile("^[A-Za-z0-9\\s',.:-]+$").matcher(author).matches();
 
         if (!isAuthorValidated) {
             new Alert(Alert.AlertType.WARNING, "Please enter a valid book author").show();
@@ -266,7 +292,7 @@ public class BookManageFormController {
     @FXML
     private void btnViewTransactionsOnAction() {
         try {
-            URL resource = BookManageFormController.class.getResource("/view/admin/viewTransactionForm.fxml");
+            URL resource = BookManageFormController.class.getResource("/view/admin/viewTransactions-form.fxml");
             Parent parent = FXMLLoader.load(resource);
             Scene scene = new Scene(parent);
             Stage stage = new Stage();

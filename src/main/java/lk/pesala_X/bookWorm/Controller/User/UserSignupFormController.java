@@ -7,7 +7,6 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.CheckBox;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import lk.pesala_X.bookWorm.bo.BOFactory;
 import lk.pesala_X.bookWorm.bo.custom.UserBO;
@@ -37,18 +36,7 @@ public class UserSignupFormController {
     private final UserBO userBO = (UserBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.USER);
 
     @FXML
-    void btnBackOnAction() {
-        pane.getChildren().clear();
-        try {
-            AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/view/user/userLogin-form.fxml"));
-            pane.getChildren().add(anchorPane);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    @FXML
-    void btnSignupOnAction(ActionEvent event) {
+    private void btnSignupOnAction() {
         if(validateUser()){
             String name = txtUsername.getText();
             String email = txtEmail.getText();
@@ -69,9 +57,20 @@ public class UserSignupFormController {
         }
     }
 
+    @FXML
+    private void btnBackOnAction() {
+        pane.getChildren().clear();
+        try {
+            AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/view/user/userLogin-form.fxml"));
+            pane.getChildren().add(anchorPane);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
     private boolean validateUser(){
         String name = txtUsername.getText();
-        boolean isFirstNameValidated = Pattern.compile("^[A-Za-z]{1,20}$").matcher(name).matches();
+        boolean isFirstNameValidated = Pattern.compile("^[A-Za-z0-9\\s',.:-]+$").matcher(name).matches();
 
         if (!isFirstNameValidated) {
             new Alert(Alert.AlertType.WARNING, "Please enter a valid name").show();

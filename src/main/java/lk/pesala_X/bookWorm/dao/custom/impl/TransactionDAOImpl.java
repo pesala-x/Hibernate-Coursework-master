@@ -40,8 +40,15 @@ public class TransactionDAOImpl implements TransactionDAO{
     }
 
     @Override
-    public ObservableList<Transactions> loadAll() throws Exception {
-        return null;
+    public ObservableList<Transactions> loadAll() {
+        ObservableList<Transactions> transactions = FXCollections.observableArrayList();
+        try (Session session = SessionFactoryConfig.getInstance().getSession()) {
+            Query<Transactions> query = session.createQuery("FROM Transactions WHERE returning < CURRENT_DATE", Transactions.class);
+            transactions.addAll(query.getResultList());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return transactions;
     }
 
     @Override

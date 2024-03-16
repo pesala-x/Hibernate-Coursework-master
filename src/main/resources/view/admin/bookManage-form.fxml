@@ -16,7 +16,7 @@
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="pane" prefHeight="720.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.pesala_X.bookWorm.Controller.admin.BookManageFormController">
+<AnchorPane fx:id="pane" prefHeight="720.0" prefWidth="1200.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.pesala_X.bookWorm.Controller.admin.BookManageFormController">
    <children>
       <ImageView fitHeight="580.0" fitWidth="1023.0" layoutX="99.0" layoutY="85.0" opacity="0.6">
          <image>
@@ -25,7 +25,7 @@
       </ImageView>
       <ImageView fitHeight="87.0" fitWidth="145.0" layoutX="118.0" layoutY="585.0">
          <image>
-            <Image url="@../../assets/Book%20Worm%20Logo%20black1.png" />
+            <Image url="@../../assets/Book Worm Logo black1.png" />
          </image>
       </ImageView>
       <TableView fx:id="tblBook" layoutX="143.0" layoutY="254.0" prefHeight="344.0" prefWidth="936.0" style="-fx-background-radius: 10px;">
@@ -42,7 +42,7 @@
             <DropShadow />
          </effect>
       </TableView>
-      <Label fx:id="lblTitle" layoutX="364.0" layoutY="24.0" prefHeight="52.0" prefWidth="550.0" text="Welcome to Branch">
+      <Label fx:id="lblTitle" layoutX="299.0" layoutY="24.0" prefHeight="52.0" prefWidth="653.0" text="Welcome to Branch">
          <font>
             <Font name="Bauhaus 93" size="45.0" />
          </font>
@@ -136,7 +136,7 @@
          </graphic>
       </Button>
       <Label layoutX="118.0" layoutY="687.0" prefHeight="18.0" prefWidth="1016.0" style="-fx-alignment: center;" text="Copyright © 2024 Pesala-X. All Rights Reserved." textFill="#14d7d0" />
-      <TextField fx:id="txtSearch" layoutX="973.0" layoutY="36.0" onAction="#btnSearchOnAction" promptText="Search Book Id" style="-fx-background-radius: 10px; -fx-border-color: #14d7d0; -fx-border-radius: 10px;" />
+      <TextField fx:id="txtSearch" layoutX="973.0" layoutY="36.0" onAction="#btnSearchOnAction" promptText="Search Book Id" style="-fx-background-radius: 10px; -fx-background-color: transparent; -fx-border-color: #14d7d0; -fx-border-radius: 10px;" />
       <TextField fx:id="txtTitle" layoutX="406.0" layoutY="117.0" prefHeight="42.0" prefWidth="198.0" promptText="BookTitle" style="-fx-background-color: transparent; -fx-background-radius: 10px; -fx-background-insets: black;">
          <font>
             <Font name="Arial Black" size="17.0" />

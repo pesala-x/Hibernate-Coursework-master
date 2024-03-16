@@ -1,5 +1,6 @@
 package lk.pesala_X.bookWorm.dto;
 
+import lk.pesala_X.bookWorm.entity.Branch;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -20,5 +21,9 @@ public class BranchDTO {
         this.manager = manager;
         this.address = address;
         this.email = email;
+    }
+
+    public Branch toEntity(){
+        return new Branch(id, name, manager, address, email);
     }
 }

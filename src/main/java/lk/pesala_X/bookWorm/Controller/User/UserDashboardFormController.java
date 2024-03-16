@@ -40,7 +40,7 @@ public class UserDashboardFormController {
     void btnMyBooksOnAction(ActionEvent event) {
         pane.getChildren().clear();
         try {
-            AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/view/user/borrowBookForm.fxml"));
+            AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/view/User/bookBorrow-form.fxml"));
             pane.getChildren().add(anchorPane);
         } catch (IOException e) {
             e.printStackTrace();
@@ -50,7 +50,7 @@ public class UserDashboardFormController {
     void btnReturnBooksOnAction(ActionEvent event) {
         pane.getChildren().clear();
         try {
-            AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/view/user/returnBookForm.fxml"));
+            AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/view/User/returnBook-form.fxml"));
             pane.getChildren().add(anchorPane);
         } catch (IOException e) {
             e.printStackTrace();
@@ -61,7 +61,7 @@ public class UserDashboardFormController {
     void btnSearchBooksOnAction() {
         pane.getChildren().clear();
         try {
-            AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/view/user/bookSearchForm.fxml"));
+            AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/view/User/bookSearch-form.fxml"));
             pane.getChildren().add(anchorPane);
         } catch (IOException e) {
             e.printStackTrace();
@@ -72,7 +72,7 @@ public class UserDashboardFormController {
     void btnSettingsOnAction(ActionEvent event) {
         pane.getChildren().clear();
         try {
-            AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/view/user/userSettingForm.fxml"));
+            AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/view/User/userSettings-form.fxml"));
             pane.getChildren().add(anchorPane);
         } catch (IOException e) {
             e.printStackTrace();

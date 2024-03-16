@@ -41,8 +41,8 @@ public class Book implements Serializable {
     @JoinColumn(name = "branch_id")
     private Branch branch;
 
-    @ManyToMany()
-    private List<Transactions> transactionList = new ArrayList<>();
+    @OneToMany(mappedBy = "book")
+    private List<BookTransaction> bookTransactions = new ArrayList<>();
 
     public Book(String branchName, String author, String title, String genre, String status) {
         this.branchName = branchName;

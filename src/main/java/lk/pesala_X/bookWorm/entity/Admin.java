@@ -1,6 +1,7 @@
 package lk.pesala_X.bookWorm.entity;
 
 import jakarta.persistence.*;
+import lk.pesala_X.bookWorm.dto.AdminDTO;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -32,6 +33,16 @@ public class Admin implements Serializable {
     public Admin(String name, String password) {
         this.name = name;
         this.password = password;
+    }
+
+    public Admin(int id, String name, String password) {
+        this.id = id;
+        this.name = name;
+        this.password = password;
+    }
+
+    public AdminDTO toDto(){
+        return new AdminDTO(id,name,password);
     }
 
 }

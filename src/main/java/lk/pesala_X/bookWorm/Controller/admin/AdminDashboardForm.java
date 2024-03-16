@@ -235,7 +235,7 @@ public class AdminDashboardForm {
         }
 
         String managerName = txtManager.getText();
-        boolean isManagerValidated = Pattern.compile("^[A-Za-z]{1,20}$").matcher(managerName).matches();
+        boolean isManagerValidated = Pattern.compile("^[A-Za-z0-9\\s',.:-]+$").matcher(managerName).matches();
 
         if (!isManagerValidated) {
             new Alert(Alert.AlertType.WARNING, "Please enter a valid manager name").show();
@@ -245,7 +245,7 @@ public class AdminDashboardForm {
         }
 
         String address = txtAddress.getText();
-        boolean isAddressValidated = Pattern.compile("^[A-z]{1,20}$").matcher(address).matches();
+        boolean isAddressValidated = Pattern.compile("^[A-Za-z0-9\\s',.:-]+$").matcher(address).matches();
         if (!isAddressValidated) {
             txtAddress.requestFocus();
             txtAddress.setStyle("-fx-border-color:#ff0000;");

@@ -37,15 +37,21 @@ public class UserLoginFormController {
 
     @FXML
     private TextField txtUsername;
-
     public static String member;
 
     private final UserBO userBO = (UserBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.USER);
+
     @FXML
-    void btnBackOnAction(MouseEvent event) {
+    private void btnLoginOnAction() {
+        if (validateAdmin()){
+            searchUser();
+        }
+    }
+
+    public void hypSignupOnAction(ActionEvent actionEvent) {
         pane.getChildren().clear();
         try {
-            AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/view/mainLogin-form.fxml"));
+            AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/view/user/userSignup-form.fxml"));
             pane.getChildren().add(anchorPane);
         } catch (IOException e) {
             e.printStackTrace();
@@ -53,17 +59,10 @@ public class UserLoginFormController {
     }
 
     @FXML
-    void btnLoginOnAction(ActionEvent event) {
-        if (validateAdmin()){
-            searchUser();
-        }
-    }
-
-    @FXML
-    void hypSignupOnAction(ActionEvent event) {
+    private void btnBackOnAction() {
         pane.getChildren().clear();
         try {
-            AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/view/user/userSignup-form.fxml"));
+            AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/view/mainLogin-form.fxml"));
             pane.getChildren().add(anchorPane);
         } catch (IOException e) {
             e.printStackTrace();
@@ -88,7 +87,7 @@ public class UserLoginFormController {
 
     private void loadDashboard(){
         try {
-            AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/view/user/userDashboardForm.fxml"));
+            AnchorPane anchorPane = FXMLLoader.load(this.getClass().getResource("/view/User/userDashboard-form.fxml"));
             Scene scene = new Scene(anchorPane);
             Stage stage = (Stage) pane.getScene().getWindow();
             stage.setScene(scene);
@@ -96,13 +95,14 @@ public class UserLoginFormController {
             stage.setResizable(false);
             stage.show();
         } catch (IOException e) {
-            new Alert(Alert.AlertType.WARNING,e.getMessage()).show();
+            new Alert(Alert.AlertType.ERROR,e.getMessage()).show();
+            //new Alert(Alert.AlertType.WARNING,e.getMessage()).show();
         }
     }
 
     private boolean validateAdmin(){
         String name = txtUsername.getText();
-        boolean isFirstNameValidated = Pattern.compile("^[A-Za-z]{1,20}$").matcher(name).matches();
+        boolean isFirstNameValidated = Pattern.compile("^[A-Za-z0-9\\s',.:-]+$").matcher(name).matches();
 
         if (!isFirstNameValidated) {
             new Alert(Alert.AlertType.WARNING, "Please enter a valid user name").show();
@@ -122,5 +122,4 @@ public class UserLoginFormController {
         }
         return true;
     }
-
 }
